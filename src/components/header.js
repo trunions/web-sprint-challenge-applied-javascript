@@ -44,7 +44,7 @@ const headerAppender = (selector) => {
   //
 
   const newHeader = Header('Lambda Times','August 15th 2021', '88°')
-  const headerPoint = document.querySelector(".header-container")
+  const headerPoint = document.querySelector(selector)
   headerPoint.appendChild(newHeader)
 }
 
