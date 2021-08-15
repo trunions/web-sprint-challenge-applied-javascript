@@ -16,19 +16,22 @@ const Tabs = ({topics}) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-  const topicDiv = document.createElement('div')
-  topicDiv.classList.add('topics')
-  
-  topics.forEach((content) => {
-  const tabs = document.createElement('div')
-  tabs.classList.add('tab')
-  tabs.textContent = content 
-  topicDiv.appendChild(tabs)
+  const topicsDIV = document.createElement('div') 
+  topicsDIV.classList.add('topics')               
+
+  topics.forEach((i) => {                         
+    const tabs = document.createElement('div')  
+    tabs.classList.add('tab')                 
+    tabs.textContent = i;                     
+    topicsDIV.appendChild(tabs) 
   })
-
-  return topicDiv
-
+                
+                                                  
+                                                 
+  return topicsDIV;                               
 }
+
+
 
 const tabsAppender = (selector) => {
   // TASK 4
